@@ -1,0 +1,107 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="en-US">
+<SCRIPT LANGUAGE="JavaScript">
+function showDate()
+{
+	var now = new Date();
+	var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+	function fourdigits(number)
+	{
+		return (number < 1000) ? number + 1900 : number;
+	}
+
+tnow=new Date();
+thour=now.getHours();
+tmin=now.getMinutes();
+tsec=now.getSeconds();
+
+if (tmin<=9) { tmin="0"+tmin; }
+if (tsec<=9) { tsec="0"+tsec; }
+if (thour<10) { thour="0"+thour; }
+
+today = days[now.getDay()] + ", " + date + " " + months[now.getMonth()] + ", " + (fourdigits(now.getYear())) + " - " + thour + ":" + tmin +":"+ tsec;
+document.getElementById("dateDiv").innerHTML = today;
+}
+setInterval("showDate()", 1000);
+</script>
+
+<?php   
+
+echo date("r");
+	
+}
+
+?>
+
+<head>
+	<title>Ian and the Bean Talk</title>
+	<link rel="stylesheet" type="text/css" href="style/style1.css" />
+</head>
+
+<body>
+
+
+
+<h1>Ian and the Bean Talk and Other Tech Tales from the Farm</h1>
+
+
+<div id="dateDiv" align="right"></div>
+
+<!Like button code>
+	<iframe
+    	src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thelusitanosupplyco/"
+    	scrolling="no" frameborder="0" align="right"
+    	style="border:none; width:200px; height:20px">
+	</iframe>
+	
+<br>
+<br>
+<hr>
+
+<h2 align="center"> Thumb touch tree </h2>
+
+<p>
+	There is no Midas touch to farming. And what this preacher friend calls ‘green thumb’.  Oh, may he be preaching beyond his predicament and senses!  The unknowns behind plant growth this preacher friend and your ancestry deemed magic or of this god or goddess now – thanks to science – has a wide knowledge base and, combined with the right oodles of prudence, can give you the disputed green thumb and Midas touch in agriculture.  Well, so there they are still, but not in so much of a spectacle so enchanted and mysterious as earlier.  To the uneducated and mystical, science becomes magic.  Okay, let us further detail.
+</p>
+
+<P>
+	The Philippines, so long as it remains at around 13° N latitude and 122° E longitude, will remain a tropical country.  And archipelagic at that unless water froze back into the ice caps, evaporated out into space or seeped further down the Earth’s core.  Who knows what is happening at mesoscale levels?  It may be too late to become a financial powerhouse Singapore with overseas remittances only squandered on imported goods or a heavily industrial Japan with no robots walking among Filipinos yet, and while it exports electronics and is into its own goods manufacturing, farming, despite its ails in mechanization and land area, will always find its way to the industry and economy, feeding many and feeding the pockets of middlemen more.
+</P>
+
+<P>
+	But what to plant?  The science of climate limits the Philippines to tropical flora.  And how to plant them?  There is a plethora of available literature from trusted sources, which the Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development – that is a name! – or PCAARRD – that is more of an acronym because where did the ‘N’ go? – has been standing in for.  114 State Universities and Colleges (SUCs) also fill in for the agricultural research in applied sciences and technologies to advance farming operations and efficiencies.  
+</P>
+
+<P>
+	One can easily plant a seed and leave it to grow. Such is the mindset in coconut farming, often called the lazy man’s crop because the coconut seed or drupe simply drops from the mother tree, rolls down the hill and settles to a spot where it grows in three to six years ready for harvesting again.  Man can then limit his coconut farming inputs to his bare self, moving about to pick up fallen drupes.  And while the science and technology has improved efficiencies and operations relating to farming, the very basics of getting a seed, planting it in a medium like soil, and man simply waiting on for the fruit remain.
+</P>
+
+<P>
+	As to the choice of tropical flora to plant, a variety of crops and trees are at one’s disposal.  Rice is a staple choice being a commodity crop along with corn and bananas.  Fruit trees are best in Mindanao where rain is distributed year-round.  Wood trees are acceptable all throughout the country.  This is because a tropical biome will be trees, trees, and trees.  And perhaps more trees.  In 1521, when Magellan became the first recorded foreign fertilizer in the land, the country was teeming with forest vegetation.  It was the Spaniards, driven by economic expansion, that brought domesticated alien flora species to farm in monocropping fashion from North to South of its then colony – rice in Nueva Ecija, sugarcane in Camarines Sur, and pineapple in Bukidnon to name a few. 
+</P>
+
+<P>
+	The Philippines hosts typhoons regularly, a hospitality decried in crop and livestock production.  Typhoons are not so a threat to trees.  Some trees serve effectively as windbreaks and shelterbelts with the help of topography.  And fallen lumber is instant cash unlike high value crops needing extra tender loving care under extreme environmental conditions.  The catch here is that tropical Philippines can grow a long list of marketable cash crops.  There are a host of factors in and out of any farming system, yes.  And that is where science and technology do come in handy.  In these spaces, one will find insights into relevant farming technologies that may ultimately lead to a longed-for green thumb or Midas’ Touch to farming.  Let us start spilling beans.  This is Ian and the Bean Talk, and Other Tech Tales from the Farm.
+</P>
+
+<!get subscriber information, if wrong e-mail, do not process!>
+<form method="POST" action="support/subscribe.php">
+	<p>Subscribe to Ian and the Bean Talk!</p>
+	<p>Name: <input type="text" name="Name" size="20"></p>
+	<p>Email: <input type="text" name="Email" size="20"></p>
+	<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</body>
+
+<body>
+	<p>©2018 
+		<a href="tv-main.html">
+			<span>Tradicíon Viriato</span>
+		</a> Publications
+	</p>
+</body>
+
+</html>
