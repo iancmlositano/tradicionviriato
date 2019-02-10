@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+<SCRIPT LANGUAGE="JavaScript">
+function showDate()
+{
+	var now = new Date();
+	var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+	function fourdigits(number)
+	{
+		return (number < 1000) ? number + 1900 : number;
+	}
+
+tnow=new Date();
+thour=now.getHours();
+tmin=now.getMinutes();
+tsec=now.getSeconds();
+
+if (tmin<=9) { tmin="0"+tmin; }
+if (tsec<=9) { tsec="0"+tsec; }
+if (thour<10) { thour="0"+thour; }
+
+today = days[now.getDay()] + ", " + date + " " + months[now.getMonth()] + ", " + (fourdigits(now.getYear())) + " - " + thour + ":" + tmin +":"+ tsec;
+document.getElementById("dateDiv").innerHTML = today;
+}
+setInterval("showDate()", 1000);
+</script>
+
+<?php   
+
+echo date("r");
+	
+}
+
+?>
+<head>
+	<title>Tradicíon Viriato</title>
+	<link rel="stylesheet" type="text/css" href="style/style1.css" />
+</head>
+
+<body>
+<h1>Tradicíon Viriato </h1>
+
+<div id="dateDiv" align="right"></div>
+	<iframe
+    	src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/thelusitanosupplyco/"
+    	scrolling="no" frameborder="0" data-layout="box_count" data-share="true" data-size="large" align="right"
+    	style="border:none; width:200px; height:20px">
+	</iframe>
+
+<br>	
+<hr>
+
+<a href="bean_talks-main.html" title="Ian and the Bean Talk">
+	<div>Ian and the Bean Talk</div>	
+</a>
+
+<video width="320" height="240" controls>
+  	<source src="media/video.mp4" type="video/mp4">
+  	<source src="media/video.ogg" type="video/ogg">
+	Your browser does not support the video tag.
+</video>
+
+<!get subscriber information, if wrong e-mail, do not process!>
+<form method="POST" action="support/subscribe.php">
+	<p>Name: <input type="text" name="Name" size="20"></p>
+	<p>Email: <input type="text" name="Email" size="20"></p>
+	<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</body>
+
+<body>
+	<p>©2018 Tradicíon Viriato Publications</p>
+</body>
+
+</html>
+
+"Logo on top
+"Menu
